@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "abyssalmadness",
+	"version": "${version}",
+	"name": "AbyssalMadness",
+	"description": "Запределье: a scripted horror overworld built in square rings out from spawn, with its own terrain, fog, infection and hollows.",
+	"authors": [
+		"Vimex"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/abyssalmadness/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"abyssalmadness.AbyssalMadness"
+		],
+		"client": [
+			"abyssalmadness.client.AbyssalMadnessClient"
+		]
+	},
+	"mixins": [
+		"abyssalmadness.mixins.json",
+		{
+			"config": "abyssalmadness.client.mixins.json",
+			"environment": "client"
+		},
+		{
+			"config": "abyssalmadness.sodium.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

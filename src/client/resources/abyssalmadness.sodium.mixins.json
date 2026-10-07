@@ -1,0 +1,11 @@
+{
+	"required": false,
+	"package": "abyssalmadness.client.mixin.sodium",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"LevelSliceMixin"
+	],
+	"injectors": {
+		"defaultRequire": 0
+	}
+}

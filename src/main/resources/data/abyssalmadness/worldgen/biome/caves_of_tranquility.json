@@ -1,0 +1,49 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.6,
+  "effects": {
+    "water_color": "#4d7a68"
+  },
+  "attributes": {
+    "minecraft:visual/fog_color": "#12201b",
+    "minecraft:visual/sky_color": "#0d1512"
+  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "abyssalmadness:ore_coal_block"
+    ],
+    [
+      "abyssalmadness:cave_moss"
+    ],
+    [
+      "minecraft:spring_water"
+    ],
+    [],
+    []
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

@@ -1,0 +1,19 @@
+{
+  "abyss_rush": {
+    "subtitle": "subtitles.abyssalmadness.abyss_rush",
+    "sounds": [
+      {
+        "name": "abyssalmadness:abyss_rush",
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "abyss_rush_ambient": {
+    "subtitle": "subtitles.abyssalmadness.abyss_rush_ambient",
+    "sounds": [
+      {
+        "name": "abyssalmadness:abyss_rush_ambient"
+      }
+    ]
+  }
+}

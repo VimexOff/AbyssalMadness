@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "abyssalmadness.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"RandomStateMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

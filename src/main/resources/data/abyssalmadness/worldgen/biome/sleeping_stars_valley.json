@@ -1,0 +1,52 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.9,
+  "downfall": 0.0,
+  "effects": {
+    "water_color": "#3a4a6b",
+    "grass_color": "#c2ad5a",
+    "foliage_color": "#b09a48"
+  },
+  "attributes": {
+    "minecraft:visual/fog_color": "#0a0b16",
+    "minecraft:visual/sky_color": "#04040a"
+  },
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [
+      "abyssalmadness:boulder",
+      "abyssalmadness:monolith_skin",
+      "abyssalmadness:buried_ruin"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "abyssalmadness:ancient_tree",
+      "abyssalmadness:forest_canopy",
+      "abyssalmadness:patch_dry_grass",
+      "abyssalmadness:patch_tall_dry_grass",
+      "abyssalmadness:crystal_spike",
+      "abyssalmadness:crystal_spike_tall",
+      "abyssalmadness:crystal_ring",
+      "abyssalmadness:crystal_face"
+    ],
+    []
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

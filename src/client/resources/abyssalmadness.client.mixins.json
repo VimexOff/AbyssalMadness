@@ -1,0 +1,23 @@
+{
+	"required": true,
+	"package": "abyssalmadness.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AvatarRendererMixin",
+		"CameraAccessor",
+		"CameraMixin",
+		"GameRendererMixin",
+		"InfectedGlowMixin",
+		"LevelRendererMixin",
+		"PostChainAccessor",
+		"PostPassAccessor",
+		"PostPassBufferMixin",
+		"RenderSectionRegionMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,120 @@
+{
+    "targets": {
+        "swap": {},
+        "glow_a": {},
+        "glow_b": {}
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/beacon",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "minecraft:main"
+                },
+                {
+                    "sampler_name": "InDepth",
+                    "target": "minecraft:main",
+                    "use_depth_buffer": true
+                }
+            ],
+            "output": "swap",
+            "uniforms": {
+                "BeaconConfig": [
+                    { "name": "Beacon", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "Params", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "swap",
+                    "bilinear": true
+                }
+            ],
+            "output": "glow_a",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 1.0, 0.0, 1.0, 0.006 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "glow_a",
+                    "bilinear": true
+                }
+            ],
+            "output": "glow_b",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 0.0, 1.0, 0.0, 0.006 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "glow_b",
+                    "bilinear": true
+                }
+            ],
+            "output": "glow_a",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 1.0, 0.0, 0.0, 0.018 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "glow_a",
+                    "bilinear": true
+                }
+            ],
+            "output": "glow_b",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 0.0, 1.0, 0.0, 0.018 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_mix",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "swap"
+                },
+                {
+                    "sampler_name": "InGlow",
+                    "target": "glow_b",
+                    "bilinear": true
+                }
+            ],
+            "output": "minecraft:main",
+            "uniforms": {
+                "GlowConfig": [
+                    { "name": "GlowParams", "type": "vec4", "value": [ 1.6, 0.0, 0.0, 0.0 ] }
+                ]
+            }
+        }
+    ]
+}

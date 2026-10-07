@@ -1,0 +1,50 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.0,
+  "effects": {
+    "water_color": "#5b6670"
+  },
+  "attributes": {
+    "minecraft:visual/fog_color": "#9aa1a9",
+    "minecraft:visual/sky_color": "#6b747f",
+    "minecraft:visual/fog_start_distance": 220.0,
+    "minecraft:visual/fog_end_distance": 900.0
+  },
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "abyssalmadness:grey_cobblestone",
+      "abyssalmadness:grey_deepslate",
+      "abyssalmadness:grey_stone_bricks",
+      "abyssalmadness:grey_smooth_stone",
+      "abyssalmadness:grey_gravel",
+      "abyssalmadness:ore_andesite_grey",
+      "abyssalmadness:ore_tuff_grey",
+      "abyssalmadness:ore_diamond_rich",
+      "abyssalmadness:ore_lapis_rich",
+      "abyssalmadness:ore_copper_rich"
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

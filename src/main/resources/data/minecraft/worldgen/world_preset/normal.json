@@ -1,0 +1,66 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "minecraft:overworld",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "abyssalmadness:sky_gorges",
+        "biome_source": {
+          "type": "abyssalmadness:level_biomes",
+          "levels": [
+            {
+              "max_distance": 1500,
+              "biome": "abyssalmadness:spawn_plains"
+            },
+            {
+              "max_distance": 5000,
+              "biome": "abyssalmadness:sky_gorges"
+            },
+            {
+              "max_distance": 10000,
+              "biome": "abyssalmadness:sleeping_stars_valley"
+            },
+            {
+              "max_distance": 15000,
+              "biome": "abyssalmadness:caves_of_tranquility"
+            },
+            {
+              "max_distance": 20000,
+              "biome": "abyssalmadness:infinity"
+            },
+            {
+              "max_distance": 24960,
+              "biome": "abyssalmadness:gods_lands"
+            },
+            {
+              "max_distance": 25060,
+              "biome": "abyssalmadness:abyssal_wall"
+            }
+          ],
+          "fallback": "abyssalmadness:gods_lands"
+        }
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:nether",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "preset": "minecraft:nether"
+        }
+      }
+    },
+    "minecraft:the_end": {
+      "type": "minecraft:the_end",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:end",
+        "biome_source": {
+          "type": "minecraft:the_end"
+        }
+      }
+    }
+  }
+}

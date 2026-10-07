@@ -1,0 +1,42 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.7,
+  "downfall": 0.4,
+  "effects": {
+    "water_color": "#3f6fd4"
+  },
+  "attributes": {
+    "minecraft:visual/fog_color": "#8aa9d6",
+    "minecraft:visual/sky_color": "#8fb4ff"
+  },
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "abyssalmadness:wild_crops",
+      "minecraft:patch_grass_plain",
+      "abyssalmadness:patch_bush",
+      "abyssalmadness:patch_moss"
+    ],
+    []
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

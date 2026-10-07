@@ -1,0 +1,77 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "effects": {
+    "water_color": "#4a90c4"
+  },
+  "attributes": {
+    "minecraft:visual/fog_color": "#cfe0ee",
+    "minecraft:visual/sky_color": "#9dc6e8"
+  },
+  "carvers": [],
+  "features": [
+    [],
+    [],
+    [
+      "abyssalmadness:boulder"
+    ],
+    [],
+    [],
+    [],
+    [
+      "abyssalmadness:gods_ore_coal",
+      "abyssalmadness:gods_ore_iron",
+      "abyssalmadness:gods_ore_copper",
+      "abyssalmadness:gods_ore_gold",
+      "abyssalmadness:gods_ore_redstone",
+      "abyssalmadness:gods_ore_lapis",
+      "abyssalmadness:gods_ore_emerald",
+      "abyssalmadness:gods_ore_diamond"
+    ],
+    [],
+    [],
+    [
+      "minecraft:patch_grass_plain",
+      "abyssalmadness:patch_bush",
+      "abyssalmadness:oak_grove"
+    ],
+    []
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:sheep",
+        "weight": 12,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:cow",
+        "weight": 8,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

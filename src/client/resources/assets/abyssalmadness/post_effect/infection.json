@@ -1,0 +1,194 @@
+{
+    "targets": {
+        "swap": {},
+        "glow_a": {},
+        "glow_b": {}
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/infection",
+            "inputs": [
+                { "sampler_name": "In", "target": "minecraft:main" },
+                { "sampler_name": "InDepth", "target": "minecraft:main", "use_depth_buffer": true },
+                { "sampler_name": "InOutline", "target": "minecraft:entity_outline" }
+            ],
+            "output": "swap",
+            "uniforms": {
+                "InfectionConfig": [
+                    { "name": "InvVP0", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "InvVP1", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "InvVP2", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "InvVP3", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P0", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P1", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P2", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P3", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P4", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P5", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P6", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P7", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P8", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P9", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P10", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P11", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P12", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P13", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P14", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P15", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P16", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P17", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P18", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P19", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P20", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P21", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P22", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P23", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P24", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P25", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P26", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P27", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P28", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P29", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P30", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P31", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P32", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P33", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P34", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P35", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P36", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P37", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P38", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P39", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P40", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P41", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P42", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P43", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P44", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P45", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P46", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P47", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P48", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P49", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P50", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P51", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P52", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P53", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P54", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P55", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P56", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P57", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P58", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P59", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P60", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P61", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P62", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P63", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P64", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P65", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P66", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P67", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P68", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P69", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P70", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P71", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P72", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P73", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P74", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P75", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P76", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P77", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P78", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P79", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P80", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P81", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P82", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P83", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P84", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P85", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P86", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P87", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P88", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P89", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P90", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P91", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P92", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P93", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P94", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P95", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P96", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P97", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P98", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "P99", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] },
+                    { "name": "Params", "type": "vec4", "value": [ 0.0, 0.0, 0.0, 0.0 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                { "sampler_name": "In", "target": "swap", "bilinear": true }
+            ],
+            "output": "glow_a",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 1.0, 0.0, 1.0, 0.004 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                { "sampler_name": "In", "target": "glow_a", "bilinear": true }
+            ],
+            "output": "glow_b",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 0.0, 1.0, 0.0, 0.004 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                { "sampler_name": "In", "target": "glow_b", "bilinear": true }
+            ],
+            "output": "glow_a",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 1.0, 0.0, 0.0, 0.011 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_blur",
+            "inputs": [
+                { "sampler_name": "In", "target": "glow_a", "bilinear": true }
+            ],
+            "output": "glow_b",
+            "uniforms": {
+                "BlurConfig": [
+                    { "name": "BlurDir", "type": "vec4", "value": [ 0.0, 1.0, 0.0, 0.011 ] }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "abyssalmadness:post/glow_mix",
+            "inputs": [
+                { "sampler_name": "In", "target": "swap" },
+                { "sampler_name": "InGlow", "target": "glow_b", "bilinear": true }
+            ],
+            "output": "minecraft:main",
+            "uniforms": {
+                "GlowConfig": [
+                    { "name": "GlowParams", "type": "vec4", "value": [ 1.35, 0.0, 0.0, 0.0 ] }
+                ]
+            }
+        }
+    ]
+}
